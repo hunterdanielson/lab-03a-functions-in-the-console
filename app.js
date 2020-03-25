@@ -8,24 +8,24 @@ const squirtle = {name: 'squirtle', number: 7, type: 'water'};
 
 const pokemon = [bulbasaur, ivysaur, venesaur, charmander, charmeleon, charizard, squirtle];
 
-logOutThings();
+logOutThings(pokemon);
 
 
 
 
-function logOutThings() {
-    console.log('Here are your ', pokemon.length, ' pokemon!');
+function logOutThings(arr) {
+    console.log('Here are your ', arr.length, ' pokemon!');
 
-    for(let i = 0; i < pokemon.length; i++) {
+    for(let i = 0; i < arr.length; i++) {
         
-        if(pokemon[i].type !== 'fire') {
+        if(arr[i].type !== 'fire') {
             console.log('Good vs rock');
 
         } else {
             console.log('Not good vs rock');
         }
 
-        console.log(pokemon[i]);
+        console.log(arr[i]);
     }
 
 }
