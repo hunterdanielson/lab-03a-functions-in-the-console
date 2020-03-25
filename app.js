@@ -18,6 +18,7 @@ function logOutThings() {
     const strongVsRock = [];
 
     for(let i = 0; i < pokemon.length; i++) {
+        console.log('Your pokemon type is: ', pokemon[i].type);
         console.log(pokemon[i]);
         if(pokemon[i].type !== 'fire') {
             strongVsRock.push(pokemon[i]);
@@ -25,7 +26,7 @@ function logOutThings() {
         }
     }
 
-    console.log('Here are your pokemon numbers that are strong vs rock: ');
+    console.log('Here are your pokemon names that are strong vs rock: ');
     
     for(let i = 0; i < strongVsRock.length; i++) {
         console.log(strongVsRock[i].name);
