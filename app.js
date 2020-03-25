@@ -6,10 +6,17 @@ const charmeleon = {name: 'charmeleon', number: 5, type: 'fire'};
 const charizard = {name: 'charizard', number: 6, type: 'fire'};
 
 const pokemon = [bulbasaur, ivysaur, venesaur, charmander, charmeleon, charizard];
+
+logOutThings();
+
+
 for(let i = 0; i < pokemon.length; i++) {
     console.log(pokemon[i]);
 }
 
+function logOutThings() {
+    console.log('Here are your ', pokemon.length, ' things!');
+}
 
 
 /*
