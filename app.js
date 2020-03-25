@@ -4,8 +4,9 @@ const venesaur = {name: 'venesaur', number: 3, type: 'grass'};
 const charmander = {name: 'charmander', number: 4, type: 'fire'};
 const charmeleon = {name: 'charmeleon', number: 5, type: 'fire'};
 const charizard = {name: 'charizard', number: 6, type: 'fire'};
+const squirtle = {name: 'squirtle', number: 7, type: 'water'};
 
-const pokemon = [bulbasaur, ivysaur, venesaur, charmander, charmeleon, charizard];
+const pokemon = [bulbasaur, ivysaur, venesaur, charmander, charmeleon, charizard, squirtle];
 
 logOutThings();
 
@@ -13,10 +14,24 @@ logOutThings();
 
 
 function logOutThings() {
-    console.log('Here are your ', pokemon.length, ' things!');
+    console.log('Here are your ', pokemon.length, ' pokemon!');
+    const strongVsRock = [];
+
     for(let i = 0; i < pokemon.length; i++) {
         console.log(pokemon[i]);
+        if(pokemon[i].type !== 'fire') {
+            strongVsRock.push(pokemon[i]);
+
+        }
     }
+
+    console.log('Here are your pokemon numbers that are strong vs rock: ');
+    
+    for(let i = 0; i < strongVsRock.length; i++) {
+        console.log(strongVsRock[i].name);
+    }
+
+
 }
 
 
