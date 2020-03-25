@@ -15,23 +15,18 @@ logOutThings();
 
 function logOutThings() {
     console.log('Here are your ', pokemon.length, ' pokemon!');
-    const strongVsRock = [];
 
     for(let i = 0; i < pokemon.length; i++) {
-        console.log('Your pokemon type is: ', pokemon[i].type);
-        console.log(pokemon[i]);
+        
         if(pokemon[i].type !== 'fire') {
-            strongVsRock.push(pokemon[i]);
+            console.log('Good vs rock');
 
+        } else {
+            console.log('Not good vs rock');
         }
-    }
 
-    console.log('Here are your pokemon names that are strong vs rock: ');
-    
-    for(let i = 0; i < strongVsRock.length; i++) {
-        console.log(strongVsRock[i].name);
+        console.log(pokemon[i]);
     }
-
 
 }
 
