@@ -10,12 +10,13 @@ const pokemon = [bulbasaur, ivysaur, venesaur, charmander, charmeleon, charizard
 logOutThings();
 
 
-for(let i = 0; i < pokemon.length; i++) {
-    console.log(pokemon[i]);
-}
+
 
 function logOutThings() {
     console.log('Here are your ', pokemon.length, ' things!');
+    for(let i = 0; i < pokemon.length; i++) {
+        console.log(pokemon[i]);
+    }
 }
 
 
